@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function laySoChiaHet(a, b) {
+  let mang = [];
+
+  if (a <= 0 || b <= 0) {
+    console.log("Vui lòng nhập hai số nguyên dương.");
+    return mang;
+  }
+
+  for (let i = 1; i <= a; i++) {
+    if (i % b === 0) {
+      mang.push(i);
+    }
+  }
+
+  for (let i = 1; i <= b; i++) {
+    if (i % a === 0 && !mang.includes(i)) {
+      mang.push(i);
+    }
+  }
+  return mang;
+}
+let a = parseInt(prompt("Nhập số nguyên dương a:"));
+let b = parseInt(prompt("Nhập số nguyên dương b:"));
+let mangChiaHet = laySoChiaHet(a, b);
+console.log("Mảng các số chia hết là:", mangChiaHet);
+    </script>
+</body>
+</html>

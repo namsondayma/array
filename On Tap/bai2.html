@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function timViTriPhanTu(arr, phanTu) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === phanTu) {
+      return i;
+    }
+  }
+  return -1;
+}
+let mang = [1, 2, 3, 4, 5];
+let giaTri = prompt("Nhập giá trị cần tìm kiếm:");
+let viTri = timViTriPhanTu(mang, giaTri);
+if (viTri !== -1) {
+  console.log(`Vị trí của phần tử ${giaTri} trong mảng là: ${viTri}`);
+} else {
+  console.log("Phần tử không tồn tại trong mảng");
+}
+    </script>
+</body>
+</html>

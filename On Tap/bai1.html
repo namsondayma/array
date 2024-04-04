@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function kiemTraSoNguyen(arr) {
+  let soNguyen = false;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (Number.isInteger(arr[i])) {
+      console.log(arr[i]);
+      soNguyen = true;
+    }
+  }
+
+  if (!soNguyen) {
+    console.log("Trong mảng không tồn tại số nguyên");
+  }
+}
+let mang = [1, 2, "ba", 4.5, 6, "bảy", 8];
+kiemTraSoNguyen(mang);
+    </script>
+</body>
+</html>

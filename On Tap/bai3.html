@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function demSoLanXuatHien(arr, so) {
+  let dem = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === so) {
+      dem++;
+    }
+  }
+
+  return dem;
+}
+let mang = [1, 2, 3, 4, 2, 1, 2, 5, 2];
+let soNguyen = parseInt(prompt("Nhập số nguyên cần tìm:"));
+let soLanXuatHien = demSoLanXuatHien(mang, soNguyen);
+console.log(`Số lần xuất hiện của ${soNguyen} trong mảng là: ${soLanXuatHien}`);
+    </script>
+</body>
+</html>
